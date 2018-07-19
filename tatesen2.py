@@ -1,6 +1,8 @@
-#赤と青の線を交互に100赤と青の線を交互に100ぽんひく
-from tkinter import *
+#coding:utf-8
 
+#赤と青の線を交互に100赤と青の線を交互に100ぽんひく
+import tkinter
+from tkinter import *
 w = Canvas(Tk(), width = 900, height = 400)
 w.pack()
 
@@ -10,6 +12,6 @@ for i in range(100):
         c = "#ff0000"
     else:
         c = "#0000FF"
-        w.create_line(x,0,x,400,fill = c)
+    w.create_line(x, 0, x, 400, fill = c)
 
-        mainloop()
+mainloop()
